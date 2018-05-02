@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">Rentrez vos informations pour l'inscription</div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputName">Prénom</label>
+                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" name="prenom" placeholder="Entez votre prénom">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleInputLastName">Nom</label>
+                <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" name="nom" placeholder="Entez votre nom">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputNaissance">Date de naissance</label>
+                <input class="form-control" id="exampleInputNaissance" name="date_naissance" type="text" aria-describedby="naissanceHelp" placeholder="Entez votre date de naissance">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleInputLasttelephone">Téléphone</label>
+                <input class="form-control" name="telephone" id="exampleInputtelephone" type="tel" aria-describedby="telephoneHelp" placeholder="Entez votre numéro de téléphone">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input class="form-control" id="exampleInputEmail1" name="email" type="email" aria-describedby="emailHelp" placeholder="Entrer email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputadresse">Adresse Postale</label>
+            <input class="form-control" name="adresse" id="exampleInputadresse" type="text" aria-describedby="adresseHelp" placeholder="Entrer adresse postale">
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputsex">Sex</label>
+                <select name="sexe" id="sex">
+                <option value="M">M</option>
+                <option value="F">F</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="exampleInputsituation">Situation</label>
+                <select name="situation" id="situation">
+                <option value="LICENCE">LICENCE</option>
+                <option value="MASTER">MASTER</option>
+                <option value="DOCTORA">DOCTORA</option>
+                <option value="THESE">THESE</option>
+                <option value="CHOMAGE">CHOMAGE</option>
+                <option value="CDI">CDI</option>
+                <option value="CDD">CDD</option>
+                <option value="ENTREPRENEUR">ENTREPRENEUR</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputcampus">Campus</label>
+                <select name="campus" id="campus">
+                <option value="PARIS">PARIS</option>
+                <option value="LYON">LYON</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="exampleInputpromo">Promo</label>
+                <select name="promo" id="promo">
+                <option value="ING1">ING1</option>
+                <option value="ING2">ING2</option>
+                <option value="ING3">ING3</option>
+                <option value="ING4">ING4</option>
+                <option value="ING5">ING5</option>
+                <option value="ALUMNI">ALUMNI</option>
+                </select>
+              </div>
+            </div>
+          </div>
+           <div class="form-group">
+            
+              <form method="competences">
+              <p>
+              Cochez vos compétences :<br />
+              <input type="checkbox" name="C" id="C" /> <label for="C">C</label>
+              <input type="checkbox" name="C++" id="C++" /> <label for="C++">C++</label><br />
+              <input type="checkbox" name="JAVA" id="JAVA" /> <label for="JAVA">JAVA</label>
+              <input type="checkbox" name="PYTHON" id="PYTHON" /> <label for="PYTHON">PYTHON</label><br />
+              <input type="checkbox" name="PACK OFFICE" id="PACK OFFICE" /> <label for="PACK OFFICE">PACK OFFICE</label>
+              <input type="checkbox" name="SQL" id="SQL" /> <label for="SQL">SQL</label>
+              </p>
+              </form> 
+              <form method="intérêt">
+              <p>
+              Cochez vos intérêt :<br />
+              <input type="checkbox" name="MUSIQUE" id="MUSIQUE" /> <label for="MUSIQUE">MUSIQUE</label>
+              <input type="checkbox" name="SPORT" id="SPORT" /> <label for="SPORT">SPORT</label><br />
+              <input type="checkbox" name="HUMANITAIRE" id="HUMANITAIRE" /> <label for="HUMANITAIRE">HUMANITAIRE</label>
+              <input type="checkbox" name="CUISINE" id="CUISINE" /> <label for="CUISINE">CUISINE</label><br />
+              <input type="checkbox" name="DIY" id="DIY" /> <label for="DIY">DIY</label>
+              <input type="checkbox" name="VOYAGES" id="VOYAGES" /> <label for="VOYAGES">VOYAGES</label>
+              </p>
+              </form>
+
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputPassword1">Mot de passe</label>
+                <input class="form-control" name="mdp" id="exampleInputPassword1" type="password" placeholder="Entrez mot de passe">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleConfirmPassword">Confirmer mot de passe</label>
+                <input class="form-control" name="mdp" id="exampleConfirmPassword" type="password" placeholder="Confirmez mot de passe">
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary btn-block" href="login.html">S'enregistrer</a>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+
+</html>
