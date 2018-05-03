@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -19,20 +18,25 @@
 <body class="bg-dark">
   <div class="container">
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Bienvenue sur LinkECE</div>
+      <div class="card-header">Administrateur veuillez choisir :</div>
       <div class="card-body">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email</label>
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" name="email" placeholder="Entrer email">
+            <label for="exampleInputEmail1">Nom</label>
+            <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" name="name" placeholder="Entrer le nom">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Mot de passe</label>
-            <input class="form-control" id="exampleInputPassword1" type="password" nam="mdp" placeholder="Entrer mot de passe">
-          </div>
+            <label for="exampleInputPrenom">Prénom</label>
+            <input class="form-control" id="exampleInputPrenom" type="text" name="prenom" placeholder="Entrer le prénom">
+          </div><br>
+          <label for="exampleInputchoix">Choix</label>
+            <select id="choix">
+                <option value="Ajouter">Ajouter</option>
+                <option value="Supprimer">Supprimer</option>
+            </select><br><br>
         <div>
-          <a class="btn btn-primary btn-block" href="accueil.html">Sign In</a></div> <br>
-            <div><a class="btn btn-primary btn-block" href="register.html">S'enregistrer</a></div>
+          <a class="btn btn-primary btn-block" href="login.html">Envoyer</a></div> <br>
+            <div><a class="btn btn-primary btn-block" href="login.html">Retour</a></div>
         </form>
       </div>
     </div>
