@@ -1,5 +1,5 @@
 <?php
-
+/*
 //identifier la BDD
 $database="projetpiscine";
 
@@ -23,20 +23,24 @@ if($db_found){
 			$login=isset($_POST["adresse"])? $_POST["adresse"]: "";
 			$mdp=isset($_POST["mdp"])? $_POST["mdp"]: "";
 
+
+
          $result = mysqli_query($db_handle,$sql);
          while($data = mysqli_fetch_assoc($result))
          {
          	
-         	if( $login==$data['adresse']&& $mdp==$data['mdp'] )
-                 { 
-                 	$erreur=  "Vous etes connecté";
-                 }
-             else
-             	{
+         	//if( $login==$data['adresse']&& $mdp==$data['mdp'] )
+                 
+                 	
 
-            		$erreur =  "Inexistant dans la BDD";
-         		}
 
+            if(isset($_POST['loginb']))
+            {
+                $req="SELECT * FROM utilisateur WHERE adresse = ? AND mdp = ? ";
+                $erreur=  "Vous etes connecté";
+               // header('Location: mypage.php');
+            }
+            
 
          }
 }
@@ -48,9 +52,16 @@ mysqli_close($db_handle);
 
 
 
+*/
 
 
+?>
+<?php
+$bdd = new PDO('mysql:host=localhost;dbname=piscine;charset=utf8', 'root', '');
 
+if(isset($_POST['ok'])) {
+$bdd->exec('INSERT INTO `photo`(`id_photo`, `utilisateur_id`, `url`) VALUES (0,0,0)');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -67,7 +78,7 @@ mysqli_close($db_handle);
         <table>
              <tr>
             <td align="right">Mail :</td>
-            <td> <input type="text"  placeholder="Votre mail" name="adresse"></td><br><tr> </tr><tr></tr><tr></tr><tr></tr>
+            <td> <input type="email"  placeholder="Votre mail" name="adresse"></td><br><tr> </tr><tr></tr><tr></tr><tr></tr>
           </tr><tr></tr>
 
           <tr>
@@ -75,13 +86,14 @@ mysqli_close($db_handle);
             <td> <input type="password" placeholder="Votre mot de passe"  name="mdp"></td><tr> </tr><tr></tr><tr></tr><tr></tr>
           </tr><tr></tr>
 
+
 <tr></tr>
 <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
             <td></td>
-            <td align="left"><input type="submit" value="Envoyer"></td>
+            <td align="left"><input type="submit" name="loginb" value="Envoyer"></td>
           </tr>
-
+          
           <tr></tr>
 <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
           <tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>

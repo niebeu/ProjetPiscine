@@ -5,6 +5,7 @@ $db_handle = mysqli_connect('localhost','root','');
 $db_found = mysqli_select_db($db_handle, $database);
 
 */
+
 $bdd = new PDO('mysql:host=localhost;dbname=projetpiscine','root','');
 $erreur="";
             //Recupération des données rentrée 
@@ -49,6 +50,7 @@ else
 ?>
 
 <html>
+
     <head>
         <title>Signin</title>
        <meta charset="utf-8" />
