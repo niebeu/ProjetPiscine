@@ -69,7 +69,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=piscine;charset=utf8', 'root', '');
          </ul>
           
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="photo.php">
             <i class="fa fa-fw fa-link"></i>
             <span class="nav-link-text">Photos</span>
           </a>
